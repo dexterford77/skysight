@@ -1,0 +1,11 @@
+body {
+  font: 14px "Verdana", "Arial", "Helvetica", sans-serif;
+}
+
+.space-above {
+  margin-top: 20px;
+}
+
+.slightly-right {
+  margin-left: 10px;
+}

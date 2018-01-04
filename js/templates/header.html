@@ -1,0 +1,34 @@
+<div ng-controller="NavCtrl" ng-init="init()">
+  <div class="row">
+    <div class="col-md-12">
+
+      <img name="setup_r1_c1" src="assets/images/header.jpg" id="setup_r1_c1" alt="" border="0" height="221" width="1000" />
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 navigation">
+
+      <a ui-sref="home" ng-mouseover="imgsrcs['home']=blues['home']" ng-mouseout="imgsrcs['home']=greys['home']">
+        <img name="setup_r2_c1" ng-src="{{imgsrcs['home']}}" id="setup_r2_c1" alt="" border="0" height="38" width="193" /><!--
+      --></a><!--
+
+      --><a ui-sref="inventory" ng-mouseover="imgsrcs['inventory']=blues['inventory']" ng-mouseout="imgsrcs['inventory']=greys['inventory']"><!--
+        --><img name="setup_r2_c2" ng-src="{{imgsrcs['inventory']}}" id="setup_r2_c2" alt="" border="0" height="38" width="218" /><!--
+      --></a><!--
+
+      --><a ui-sref="about" ng-mouseover="imgsrcs['about']=blues['about']" ng-mouseout="imgsrcs['about']=greys['about']"><!--
+        --><img name="setup_r2_c3" ng-src="{{imgsrcs['about']}}" id="setup_r2_c3" alt="" border="0" height="38" width="148" /><!--
+      --></a><!--
+
+      --><a ui-sref="contact" ng-mouseover="imgsrcs['contact']=blues['contact']" ng-mouseout="imgsrcs['contact']=greys['contact']"><!--
+        --><img name="setup_r2_c4" ng-src="{{imgsrcs['contact']}}" id="setup_r2_c4" alt="" border="0" height="38" width="173" /><!--
+      --></a><!--
+
+      --><a ui-sref="vendors" ng-mouseover="imgsrcs['vendors']=blues['vendors']" ng-mouseout="imgsrcs['vendors']=greys['vendors']"><!--
+        --><img name="setup_r2_c7" ng-src="{{imgsrcs['vendors']}}" id="setup_r2_c7" alt="" border="0" height="38" width="268" /><!--
+      --></a>
+    </div>
+  </div>
+</div>
