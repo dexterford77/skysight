@@ -1,13 +1,22 @@
-var skysight = angular.module("skysight", ['ui.router']);
+var skysight = angular.module("skysight", ['ui.router', 'ui.bootstrap']);
 
 skysight.config(function($urlRouterProvider, $stateProvider){
   $urlRouterProvider.otherwise('/');
   $stateProvider.state("home", {
     url: "/",
     templateUrl: "js/templates/home.html"
-  }).state("inventory", {
-    url: "/inventory",
-    templateUrl: "js/templates/inventory.html"
+  }).state("products", {
+    url: "/products",
+    abstract: true,
+    template: "<div ui-view></div>"
+  }).state('products.index', {
+    url: "",
+    templateUrl: "js/templates/products/index.html",
+    controller: "ProductsIndexCtrl"
+  }).state('products.show', {
+    url: "/:id",
+    templateUrl: "js/templates/products/show.html",
+    controller: "ProductsShowCtrl"
   }).state("about", {
     url: "/about",
     templateUrl: "js/templates/about.html"

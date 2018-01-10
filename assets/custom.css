@@ -9,3 +9,16 @@ body {
 .slightly-right {
   margin-left: 10px;
 }
+
+.slightly-left {
+  margin-left: -50px;
+}
+
+.murray-small {
+  width: 100px;
+  height: 100px;
+}
+
+.pointer {
+  cursor: pointer;
+}

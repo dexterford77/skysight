@@ -1,0 +1,19 @@
+<div class="text-center space-above">
+  <div class="row">
+    <div class="col-md-12">
+      <h3>{{product.name}}</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <img ng-src="{{product.image}}" class="murray-small">
+    </div>
+  </div>
+  <div class="row space-above">
+    <div class="col-md-12">
+      Generic Aviator Frames: {{product.genericPrice | currency:"$":0}}
+      <br>
+      Ray-Ban Aviator Frames: {{product.rayBanPrice | currency:"$":0}}
+    </div>
+  </div>
+</div>

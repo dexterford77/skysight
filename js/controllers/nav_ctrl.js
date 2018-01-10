@@ -9,7 +9,7 @@ skysight.controller("NavCtrl", ['$scope', '$state',
 
     $scope.greys = {
       "home": "assets/navbar/setup_r2_c1.jpg",
-      "inventory": "assets/navbar/setup_r2_c2.jpg",
+      "products": "assets/navbar/setup_r2_c2.jpg",
       "about": "assets/navbar/setup_r2_c3.jpg",
       "contact": "assets/navbar/setup_r2_c4.jpg",
       "vendors": "assets/navbar/setup_r2_c7.jpg"
@@ -17,7 +17,7 @@ skysight.controller("NavCtrl", ['$scope', '$state',
 
     $scope.blues = {
       "home": "assets/navbar/Skysightweb_r2_c1.jpg",
-      "inventory": "assets/navbar/Skysightweb_r2_c2.jpg",
+      "products": "assets/navbar/Skysightweb_r2_c2.jpg",
       "about": "assets/navbar/Skysightweb_r2_c3.jpg",
       "contact": "assets/navbar/Skysightweb_r2_c4.jpg",
       "vendors": "assets/navbar/Skysightweb_r2_c7.jpg"
