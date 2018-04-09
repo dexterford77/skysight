@@ -2,8 +2,34 @@ body {
   font: 14px "Verdana", "Arial", "Helvetica", sans-serif;
 }
 
+.roboto-font {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.heavy {
+  color: #000000;
+}
+
+.semiheavy {
+  color: #333333;
+}
+
+.light {
+  color: #777777;
+}
+
+.slight-space-above {
+  margin-top: 10px;
+}
+
 .space-above {
   margin-top: 20px;
+}
+
+.big-space-above {
+  margin-top: 65px;
 }
 
 .slightly-right {
@@ -11,14 +37,75 @@ body {
 }
 
 .slightly-left {
-  margin-left: -50px;
+  margin-left: -10px;
 }
 
-.murray-small {
-  width: 100px;
-  height: 100px;
+.bit-more-left {
+  margin-left: -70px;
+}
+
+.bit-more-right {
+  margin-left: 70px;
 }
 
 .pointer {
   cursor: pointer;
+}
+
+.nav-item {
+  padding-left: 30px;
+}
+
+.space-to-the-right {
+  padding-right: 400px;
+}
+
+.pull-slightly-down {
+  margin-top: 2px;
+}
+
+.vendor-button {
+  background-image: url("new_images/sky_bg.jpeg");
+  width: 20%;
+  height: 200px;
+  margin: 10px;
+  padding: 14px;
+  border-radius: 20px;
+}
+
+.big-bg {
+  background-image: url("new_images/sky_bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 110%;
+  height: 640px;
+}
+
+.reposition-home-image {
+  margin-left: -90px;
+  margin-top: 110px;
+}
+
+.pulling-right {
+  margin-right: -100px;
+}
+
+.email-input {
+  width: 400px;
+}
+
+.message-box {
+  width: 600px;
+}
+
+.img-item:hover {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.active {
+  border: 7px groove gold;
+  box-shadow: 2px 2px 5px #333333;
 }

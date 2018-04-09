@@ -1,17 +1,57 @@
-<div class="row">
-  <div class="col-md-12">
-    <div class="row">
-      <div class="col-md-12 text-center space-above">
-        <h6>
-          <strong><em>Contact us for more information about our patented tri-tinted lens</em></strong>
-        </h6>
-        <p>
-          <img ng-src="assets/images/contactus.jpg" style="width: 575px; height: 275px;" />
-        </p>
-        <p align="center">
-          <script type="text/javascript" src="https://form.jotform.us/jsform/71438477919168"></script>
-        </p>
-      </div>
+<div ng-controller="ItemCtrl">
+  <div class="row big-space-above">
+    <div class="col-md-12">
+      <h4 class="text-center">ORDER YOUR SKYSIGHT<sup>&reg;</sup> SUNGLASSES TODAY!</h4>
     </div>
   </div>
-</div>
+  <div class="row slight-space-above">
+    <div class="col-md-10 offset-md-1">
+      <p>
+        Please fill out as much of this <b>custom order form</b> as you would like, and either Ray or Elin will be in touch with you <b>within 2-3 business days</b>. We will then work with you directly via e-mail or phone to make sure you get the best Skysight<sup>&reg;</sup> sunglasses possible -- personalized and customized for your needs.
+      </p>
+      <p>
+        If you have any questions while filling out the form, <a ui-sref="faq">check out our FAQ page</a> -- or simply leave that item blank and ask your question in the message box below. We'll be in touch with you soon!
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 offset-md-1">
+      <h4 class="text-center">Select a Frame</h4>
+      <p class="text-center">
+        <img src="assets/new_images/RB3025-141221-Skysight-Gold-09.JPG" height="180px" width="280px" class="img-item" ng-class="{'active': frame1Active}" ng-click="activate('frame1')" />
+        <img src="assets/new_images/RB3025-141221-Skysight-Gold-09.JPG" height="180px" width="280px" class="img-item" ng-class="{'active': frame2Active}" ng-click="activate('frame2')" />
+        <img src="assets/new_images/RB3025-141221-Skysight-Gold-09.JPG" height="180px" width="280px" class="img-item" ng-class="{'active': frame3Active}" ng-click="activate('frame3')" />
+      </p>
+      <h4 class="text-center slight-space-above">Select a Lens</h4>
+      <p class="text-center">
+        <img src="assets/new_images/RB3025-58mm-141224-D-35 bifocal filled.jpg" height="160" width="180" class="img-item" ng-class="{'active': lens1Active}" ng-click="activate('lens1')" />
+        <img src="assets/new_images/RB3025-58mm-141224-D-35 bifocal filled.jpg" height="160" width="180" class="img-item" ng-class="{'active': lens2Active}" ng-click="activate('lens2')" />
+      </p>
+      <h4 class="text-center slight-space-above">Select a Tint</h4>
+      <p class="text-center">
+        <img src="assets/new_images/RB3025-58mm-141224-D-35 bifocal filled.jpg" height="160" width="180" class="img-item" ng-class="{'active': tint1Active}" ng-click="activate('tint1')" />
+        <img src="assets/new_images/RB3025-58mm-141224-D-35 bifocal filled.jpg" height="160" width="180" class="img-item" ng-class="{'active': tint2Active}" ng-click="activate('tint2')" />
+        <img src="assets/new_images/RB3025-58mm-141224-D-35 bifocal filled.jpg" height="160" width="180" class="img-item" ng-class="{'active': tint3Active}" ng-click="activate('tint3')" />
+      </p>
+      <h4 class="text-center slight-space-above">Price</h4>
+      <p class="slight-space-above text-center">
+        <b>Your current estimated price</b>: ${{price}}
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-10 offset-md-1 text-center">
+      <h4 class="text-center slight-space-above">E-mail</h4>
+      <label>Please enter your e-mail address so that we can get in touch with you.</label>
+      <br>
+      <input class="slight-space-above email-input">
+      <br>
+      <h4 class="text-center slight-space-above">Message</h4>
+      <label class="slight-space-above">Ask any questions here!</label>
+      <br>
+      <textarea class="slight-space-above message-box"></textarea>
+      <br>
+      <button class="btn btn-outline-primary slight-space-above">PLACE ORDER</button>
+    </div>
+  </div>
+<div>

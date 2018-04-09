@@ -5,18 +5,6 @@ skysight.config(function($urlRouterProvider, $stateProvider){
   $stateProvider.state("home", {
     url: "/",
     templateUrl: "js/templates/home.html"
-  }).state("products", {
-    url: "/products",
-    abstract: true,
-    template: "<div ui-view></div>"
-  }).state('products.index', {
-    url: "",
-    templateUrl: "js/templates/products/index.html",
-    controller: "ProductsIndexCtrl"
-  }).state('products.show', {
-    url: "/:id",
-    templateUrl: "js/templates/products/show.html",
-    controller: "ProductsShowCtrl"
   }).state("about", {
     url: "/about",
     templateUrl: "js/templates/about.html"
@@ -26,12 +14,12 @@ skysight.config(function($urlRouterProvider, $stateProvider){
   }).state("vendors", {
     url: "/vendors",
     templateUrl: "js/templates/vendors.html"
-  }).state("lightdarkviews", {
-    url: "/lightdarkviews",
-    templateUrl: "js/templates/light_darkviews.html"
+  }).state("faq", {
+    url: "/faq",
+    templateUrl: "js/templates/faq.html"
   });
 });
 
 skysight.run(['$rootScope', function($rootScope) {
-    $rootScope.$on("$stateChangeError", console.log.bind(console));
+  $rootScope.$on("$stateChangeError", console.log.bind(console));
 }]);

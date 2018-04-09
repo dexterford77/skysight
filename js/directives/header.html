@@ -1,34 +1,23 @@
-<div ng-controller="NavCtrl" ng-init="init()">
-  <div class="row">
-    <div class="col-md-12">
-
-      <img name="setup_r1_c1" src="assets/images/header.jpg" id="setup_r1_c1" alt="" border="0" height="221" width="1000" />
-
+<nav class="navbar navbar-expand-sm bg-light fixed-top">
+  <div class="container-fluid">
+    <div class="roboto-font slightly-left space-to-the-right pull-slightly-down pointer" ui-sref="home">
+      <span class="semiheavy">SKYSIGHT</span>
+      <span class="light">VISION</span>
     </div>
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <button type="button" class="btn btn-outline-primary" ui-sref="contact">SHOP NOW</button>
+      </li>
+      <li class="nav-item pull-slightly-down">
+        <a class="nav-link heavy" ui-sref="faq">FAQ</a>
+      </li>
+      <li class="nav-item pull-slightly-down">
+        <a class="nav-link heavy" ui-sref="about">ABOUT US</a>
+      </li>
+      <li class="nav-item pull-slightly-down">
+        <a class="nav-link heavy" ui-sref="vendors">VENDORS</a>
+      </li>
+    </ul>
   </div>
-
-  <div class="row">
-    <div class="col-md-12 navigation">
-
-      <a ui-sref="home" ng-mouseover="imgsrcs['home']=blues['home']" ng-mouseout="currentState=='home' ? '' : imgsrcs['home']=greys['home'] ">
-        <img name="setup_r2_c1" ng-src="{{imgsrcs['home']}}" id="setup_r2_c1" alt="" border="0" height="38" width="193" /><!--
-      --></a><!--
-
-      --><a ui-sref="products.index" ng-mouseover="imgsrcs['products']=blues['products']" ng-mouseout="currentState=='products' ? '' : imgsrcs['products']=greys['products']"><!--
-        --><img name="setup_r2_c2" ng-src="{{imgsrcs['products']}}" id="setup_r2_c2" alt="" border="0" height="38" width="218" /><!--
-      --></a><!--
-
-      --><a ui-sref="about" ng-mouseover="imgsrcs['about']=blues['about']" ng-mouseout="currentState=='about' ? '' : imgsrcs['about']=greys['about']"><!--
-        --><img name="setup_r2_c3" ng-src="{{imgsrcs['about']}}" id="setup_r2_c3" alt="" border="0" height="38" width="148" /><!--
-      --></a><!--
-
-      --><a ui-sref="contact" ng-mouseover="imgsrcs['contact']=blues['contact']" ng-mouseout="currentState=='contact' ? '' : imgsrcs['contact']=greys['contact']"><!--
-        --><img name="setup_r2_c4" ng-src="{{imgsrcs['contact']}}" id="setup_r2_c4" alt="" border="0" height="38" width="173" /><!--
-      --></a><!--
-
-      --><a ui-sref="vendors" ng-mouseover="imgsrcs['vendors']=blues['vendors']" ng-mouseout="currentState=='vendors' ? '' : imgsrcs['vendors']=greys['vendors']"><!--
-        --><img name="setup_r2_c7" ng-src="{{imgsrcs['vendors']}}" id="setup_r2_c7" alt="" border="0" height="38" width="268" /><!--
-      --></a>
-    </div>
-  </div>
-</div>
+</nav>
