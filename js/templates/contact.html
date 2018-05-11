@@ -2,6 +2,7 @@
   <div class="row big-space-above">
     <div class="col-md-12">
       <h4 class="text-center">ORDER YOUR SKYSIGHT<sup>&reg;</sup> SUNGLASSES TODAY!</h4>
+      {{cart}}
     </div>
   </div>
   <div class="row slight-space-above">
@@ -18,40 +19,49 @@
     <div class="col-md-10 offset-md-1">
       <h4 class="text-center">Select a Frame</h4>
       <p class="text-center">
-        <img src="assets/new_images/RB3025-141221-Skysight-Gold-09.JPG" height="180px" width="280px" class="img-item" ng-class="{'active': frame1Active}" ng-click="activate('frame1')" />
-        <img src="assets/new_images/RB3025-141221-Skysight-Gold-09.JPG" height="180px" width="280px" class="img-item" ng-class="{'active': frame2Active}" ng-click="activate('frame2')" />
-        <img src="assets/new_images/RB3025-141221-Skysight-Gold-09.JPG" height="180px" width="280px" class="img-item" ng-class="{'active': frame3Active}" ng-click="activate('frame3')" />
+        <img src="assets/order_form_info_and_images/Ray-Ban-180415b-aviator.JPG" height="180px" width="290px" class="img-item" ng-class="{'active': frame1Active}" ng-click="activate('frame1')" />
+        <img src="assets/order_form_info_and_images/Generic-180415b-aviator-TD3025.JPG" height="180px" width="290px" class="img-item" ng-class="{'active': frame2Active}" ng-click="activate('frame2')" />
       </p>
-      <h4 class="text-center slight-space-above">Select a Lens</h4>
+      <h4 class="text-center slight-space-above">Select Lenses</h4>
       <p class="text-center">
-        <img src="assets/new_images/RB3025-58mm-141224-D-35 bifocal filled.jpg" height="160" width="180" class="img-item" ng-class="{'active': lens1Active}" ng-click="activate('lens1')" />
-        <img src="assets/new_images/RB3025-58mm-141224-D-35 bifocal filled.jpg" height="160" width="180" class="img-item" ng-class="{'active': lens2Active}" ng-click="activate('lens2')" />
+        <img src="assets/order_form_info_and_images/Lenses-180415-plano-b.jpg" height="160" width="180" class="img-item" ng-class="{'active': lens1Active}" ng-click="activate('lens1')" />
+        <img src="assets/order_form_info_and_images/Lenses-180415-bifocal-b.jpg" height="160" width="180" class="img-item" ng-class="{'active': lens2Active}" ng-click="activate('lens2')" />
+        <img src="assets/order_form_info_and_images/Lenses-180415-trifocal-b.jpg" height="160" width="180" class="img-item" ng-class="{'active': lens3Active}" ng-click="activate('lens3')" />
       </p>
-      <h4 class="text-center slight-space-above">Select a Tint</h4>
+      <h4 class="text-center slight-space-above">Select Tint Pattern</h4>
       <p class="text-center">
-        <img src="assets/new_images/RB3025-58mm-141224-D-35 bifocal filled.jpg" height="160" width="180" class="img-item" ng-class="{'active': tint1Active}" ng-click="activate('tint1')" />
-        <img src="assets/new_images/RB3025-58mm-141224-D-35 bifocal filled.jpg" height="160" width="180" class="img-item" ng-class="{'active': tint2Active}" ng-click="activate('tint2')" />
-        <img src="assets/new_images/RB3025-58mm-141224-D-35 bifocal filled.jpg" height="160" width="180" class="img-item" ng-class="{'active': tint3Active}" ng-click="activate('tint3')" />
+        <img src="assets/order_form_info_and_images/SN159-160402c.JPG" height="192" width="216" class="img-item" ng-class="{'active': tint1Active}" ng-click="activate('tint1')" />
+        <img src="assets/order_form_info_and_images/SN371-171214d.JPG" height="192" width="216" class="img-item" ng-class="{'active': tint2Active}" ng-click="activate('tint2')" />
       </p>
-      <h4 class="text-center slight-space-above">Price</h4>
-      <p class="slight-space-above text-center">
-        <b>Your current estimated price</b>: ${{price}}
+      <p class="text-center">
+        We can also tint your current glasses!
       </p>
     </div>
   </div>
   <div class="row">
     <div class="col-md-10 offset-md-1 text-center">
-      <h4 class="text-center slight-space-above">E-mail</h4>
-      <label>Please enter your e-mail address so that we can get in touch with you.</label>
+      <h4 class="text-center slight-space-above">Your E-mail</h4>
+      <label>
+        Please enter your e-mail address here; we will be in touch with you within
+        <br>
+        <b>2-3 business days</b> to answer any questions you may have & to complete your order.
+      </label>
       <br>
-      <input class="slight-space-above email-input">
+      <input class="slight-space-above email-input" ng-model="cart.email">
       <br>
       <h4 class="text-center slight-space-above">Message</h4>
       <label class="slight-space-above">Ask any questions here!</label>
+      <br />
+      <textarea class="slight-space-above message-box" ng-model="cart.message"></textarea>
       <br>
-      <textarea class="slight-space-above message-box"></textarea>
-      <br>
-      <button class="btn btn-outline-primary slight-space-above">SUBMIT</button>
+      <form action="https://formspree.io/tmec.rep@gmail.com"
+      method="POST">
+        <input ng-hide="true" type="text" name="info" value="{{cart}}">
+        <input ng-hide="true" type="email" name="_replyto" value="{{cart.email}}">
+        <input type="submit" class="btn btn-outline-primary slight-space-above" value="SUBMIT">
+      </form>
+      
+        
     </div>
   </div>
 <div>

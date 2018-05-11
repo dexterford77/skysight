@@ -109,3 +109,14 @@ body {
   border: 7px groove gold;
   box-shadow: 2px 2px 5px #333333;
 }
+
+.light-dark-image {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .xs-space-above {
+    margin-top: 20px;
+  }
+}
