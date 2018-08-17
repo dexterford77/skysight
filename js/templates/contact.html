@@ -14,52 +14,120 @@
       </p>
     </div>
   </div>
+
   <div class="row">
     <div class="col-md-10 offset-md-1">
       <h4 class="text-center">Select a Frame</h4>
       <p class="text-center">
-        <img src="assets/order_form_info_and_images/Ray-Ban-180415b-aviator.JPG" height="180px" width="290px" class="img-item" ng-class="{'active': frame1Active}" ng-click="activate('frame1')" />
-        <img src="assets/order_form_info_and_images/Generic-180415b-aviator-TD3025.JPG" height="180px" width="290px" class="img-item" ng-class="{'active': frame2Active}" ng-click="activate('frame2')" />
+        <span class="tooltipCustom" tooltip-follow-cursor>
+          <img src="assets/order_form_info_and_images/Ray-Ban-180415b-aviator.JPG" height="180px" width="290px" class="img-item" ng-class="{'active': frame1Active}" ng-click="activate('frame1')" />
+          <span class="tooltipCustomContent">
+            Ray-Ban&#174; aviator frames
+            <br>
+            Available in gold, black, and other colors
+            <br>
+            $113
+          </span>
+        </span>
+        <span class="tooltipCustom" tooltip-follow-cursor>
+          <img src="assets/order_form_info_and_images/Generic-180415b-aviator-TD3025.JPG" height="180px" width="290px" class="img-item" ng-class="{'active': frame2Active}" ng-click="activate('frame2')" />
+          <span class="tooltipCustomContent">
+            Generic aviator frames
+            <br>
+            Available in silver and gold
+            <br>
+            $7.50
+          </span>
+        </span>
       </p>
       <h4 class="text-center slight-space-above">Select Lenses</h4>
       <p class="text-center">
-        <img src="assets/order_form_info_and_images/Lenses-180415-plano-b.jpg" height="160" width="180" class="img-item" ng-class="{'active': lens1Active}" ng-click="activate('lens1')" />
-        <img src="assets/order_form_info_and_images/Lenses-180415-bifocal-b.jpg" height="160" width="180" class="img-item" ng-class="{'active': lens2Active}" ng-click="activate('lens2')" />
-        <img src="assets/order_form_info_and_images/Lenses-180415-trifocal-b.jpg" height="160" width="180" class="img-item" ng-class="{'active': lens3Active}" ng-click="activate('lens3')" />
+        <span class="tooltipCustom" tooltip-follow-cursor>
+          <img src="assets/order_form_info_and_images/Lenses-180415-plano-b.jpg" height="160" width="180" class="img-item" ng-class="{'active': lens1Active}" ng-click="activate('lens1')" />
+          <span class="tooltipCustomContent">
+            Basic
+            <br>
+            Plano: $24
+            <br>
+            Single Vision: $43
+          </span>
+        </span>
+        <span class="tooltipCustom" tooltip-follow-cursor>
+          <img src="assets/order_form_info_and_images/Lenses-180415-bifocal-b.jpg" height="160" width="180" class="img-item" ng-class="{'active': lens2Active}" ng-click="activate('lens2')" />
+          <span class="tooltipCustomContent">
+            Bifocal
+            <br>
+            FT28: $50
+            <br>
+            FT35: $64
+            <br>
+            Others available
+          </span>
+        </span>
+        <span class="tooltipCustom" tooltip-follow-cursor>
+          <img src="assets/order_form_info_and_images/Lenses-180415-trifocal-b.jpg" height="160" width="180" class="img-item" ng-class="{'active': lens3Active}" ng-click="activate('lens3')" />
+          <span class="tooltipCustomContent">
+            Trifocal
+            <br>
+            7x28: $68
+            <br>
+            8x35: $81
+            <br>
+            Others available
+          </span>
+        </span>
       </p>
       <h4 class="text-center slight-space-above">Select Tint Pattern</h4>
       <p class="text-center">
-        <img src="assets/order_form_info_and_images/SN159-160402c.JPG" height="192" width="216" class="img-item" ng-class="{'active': tint1Active}" ng-click="activate('tint1')" />
-        <img src="assets/order_form_info_and_images/SN371-171214d.JPG" height="192" width="216" class="img-item" ng-class="{'active': tint2Active}" ng-click="activate('tint2')" />
+        <span class="tooltipCustom" tooltip-follow-cursor>
+          <img src="assets/order_form_info_and_images/SN159-160402c.JPG" height="192" width="216" class="img-item" ng-class="{'active': tint1Active}" ng-click="activate('tint1')" />
+          <span class="tooltipCustomContent">
+            Tri-tinted
+            <br>
+            $75
+          </span>
+        </span>
+        <span class="tooltipCustom" tooltip-follow-cursor>
+          <img src="assets/order_form_info_and_images/SN371-171214d.JPG" height="192" width="216" class="img-item" ng-class="{'active': tint2Active}" ng-click="activate('tint2')" />
+          <span class="tooltipCustomContent">
+            Bi-tinted
+            <br>
+            $75
+          </span>
+        </span>
       </p>
       <p class="text-center">
-        We can also tint your current glasses!
+        <b>We can also tint your current glasses!</b>
       </p>
     </div>
   </div>
   <div class="row">
-    <div class="col-md-10 offset-md-1 text-center">
-      <h4 class="text-center slight-space-above">Your E-mail</h4>
-      <label>
-        Please enter your e-mail address here; we will be in touch with you within
-        <br>
-        <b>2-3 business days</b> to answer any questions you may have & to complete your order.
-      </label>
+    <div class="col-md-4 offset-md-3">
+      <label><b>Name</b></label>
+      <br>
+      <input class="slight-space-above name-input" ng-model="cart.name">
+      <br>
+      <label class="slight-space-above"><b>E-mail</b></label>
       <br>
       <input class="slight-space-above email-input" ng-model="cart.email">
       <br>
-      <h4 class="text-center slight-space-above">Message</h4>
+      <label class="slight-space-above"><b>Message</b></label>
+      <br>
       <label class="slight-space-above">Ask any questions here!</label>
       <br />
       <textarea class="slight-space-above message-box" ng-model="cart.message"></textarea>
-      <br>
-      <form action="https://formspree.io/info@skysight.com"
-      method="POST">
-        <input ng-hide="true" type="text" name="info" value="{{cart}}">
-        <input ng-hide="true" type="email" name="_replyto" value="{{cart.email}}">
-        <input type="submit" class="btn btn-outline-primary slight-space-above" value="SUBMIT">
-      </form>
-      
     </div>
   </div>
+  <div class="row">
+    <div class="col-md-10 offset-md-1 text-center">
+      <p class="text-center red slight-space-above text-center" ng-hide="cart.email.includes('@')">A return e-mail address is required.</p>
+      <form action="https://formspree.io/tmec.rep@gmail.com"
+      method="POST" class="text-center">
+        <input ng-hide="true" type="text" name="info" value="{{cart}}">
+        <input ng-hide="true" type="email" name="_replyto" value="{{cart.email}}">
+        <input type="submit" class="btn btn-outline-primary slight-space-above" value="SUBMIT" ng-disabled="!cart.email.includes('@')">
+      </form>
+    </div>
+  </div>
+
 <div>

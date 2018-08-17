@@ -1,5 +1,5 @@
-skysight.controller("ItemCtrl", ['$scope',
-  function($scope) {
+skysight.controller("ItemCtrl", ['$scope', '$document', "$window",
+  function($scope, $document, $window) {
 
     // on click, add selected item to obj + clear all currently-active
     // this obj has preset attrs, currently blank vals
@@ -10,6 +10,7 @@ skysight.controller("ItemCtrl", ['$scope',
       frame: "",
       lens: "",
       tint: "",
+      name: "",
       email: "",
       message: ""
     }
