@@ -1,23 +1,11 @@
-<nav class="navbar navbar-expand-sm bg-light fixed-top">
-  <div class="container-fluid">
-    <div class="roboto-font slightly-left space-to-the-right pull-slightly-down pointer" ui-sref="home">
-      <span class="semiheavy">SKY SIGHT</span>
-      <span class="light">VISION</span>
-    </div>
-
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <button type="button" class="btn btn-outline-primary" ui-sref="contact">SHOP NOW</button>
-      </li>
-      <li class="nav-item pull-slightly-down">
-        <a class="nav-link heavy" ui-sref="faq">FAQ</a>
-      </li>
-      <li class="nav-item pull-slightly-down">
-        <a class="nav-link heavy" ui-sref="about">ABOUT US</a>
-      </li>
-      <li class="nav-item pull-slightly-down">
-        <a class="nav-link heavy" ui-sref="vendors">VENDORS</a>
-      </li>
-    </ul>
+<nav class="topnav" id="myTopnav" ng-controller="NavCtrl">
+  <div class="navitem roboto-font pointer navhome" ui-sref="home">
+    <span class="semiheavy">SKY SIGHT</span>
+    <span class="light">VISION</span>
   </div>
+  <div class="navitem" ui-sref="faq" ng-class="blues1" ng-mouseover="blues1='blue'" ng-mouseleave="blues1=''">FAQ</div>
+  <div class="navitem" ui-sref="about" ng-class="blues2" ng-mouseover="blues2='blue'" ng-mouseleave="blues2=''">ABOUT US</div>
+  <div class="navitem" ui-sref="vendors" ng-class="blues3" ng-mouseover="blues3='blue'" ng-mouseleave="blues3=''">BUY LOCAL</div>
+  <div class="navitem"><button type="button" class="btn btn-outline-primary" ui-sref="contact">SHOP NOW</button></div>
+  <div class="navitem pointer icon" ng-click="unfoldNav()"><img class="hamburger-icon" src="assets/Hamburger_icon.svg.png" width="30px" height="30px" /></div>
 </nav>
